@@ -4,6 +4,9 @@
 <head>
   <meta charset="utf-8">
   <title>Abhisek Maiti</title>
+  <!-- preloader -->
+
+
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
   <link rel="stylesheet" href="css/styles.css">
@@ -19,7 +22,12 @@
 
 </head>
 
-<body>
+<body onload="myfun()">
+  <!-- preloader -->
+<div id="loading">
+
+</div>
+
   <!-- Nav Bar -->
   <nav class="navbar navbar-expand-md bg-blue navbar-light fixed-top">
     <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -146,6 +154,14 @@
     </center>
   </div>
   <p class=" footer-left" style="font-size:1em;">© 2020 Abhisek Maiti.</p>
+<script>
+  var preloader = document.getElementById('loading');
+  function myfun()
+  {
+
+    preloader.style.display = 'none';
+  }
+</script>
 </body>
 
 </html>
